@@ -6,13 +6,14 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:annotation-config />
+<context:component-scan base-package="ren.draven"></context:component-scan>
+<!-- 	<context:annotation-config /> -->
 
-	<bean id="personDao" class="ren.draven.dao.impl.PersonDaoBean"></bean>
+<!-- 	<bean id="personDao" class="ren.draven.dao.impl.PersonDaoBean"></bean>
 	<bean id="personService" class="ren.draven.service.impl.PersonServiceBean">
-		<!-- <constructor-arg index="0" type="ren.draven.dao.PersonDao"
+		<constructor-arg index="0" type="ren.draven.dao.PersonDao"
 			ref="personDao"></constructor-arg>
-		<constructor-arg index="1" value="dravenxiaokai"></constructor-arg> -->
-	</bean>
+		<constructor-arg index="1" value="dravenxiaokai"></constructor-arg>
+	</bean> -->
 
 </beans>
